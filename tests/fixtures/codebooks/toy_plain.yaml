@@ -1,0 +1,18 @@
+# Synthetic test codebook: no render block (default field layout).
+# Keys deliberately out of alphabetical order, and one category lacks example_item.
+categories:
+  Social:
+    name: Social
+    definition: The text links the place to community life, gatherings or shared identity.
+    example_item: People from the whole neighbourhood meet on this square every Sunday.
+    example_words: ["community", "together", "gathering"]
+  Aesthetic:
+    name: Aesthetic
+    definition: The text appreciates visual, sensory or artistic qualities.
+    example_item: The facade glows beautifully in the evening light.
+    example_words: ["beautiful", "elegant", "view"]
+  Historic:
+    name: Historic
+    definition: The text refers to past events, people or periods connected to the place.
+    example_item: null
+    example_words: ["century", "founded", "history"]

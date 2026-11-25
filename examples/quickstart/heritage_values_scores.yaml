@@ -1,0 +1,19 @@
+# Same categories as heritage_values.yaml, asking for 1-10 scores instead of yes/no.
+id: heritage_values_scores_demo
+version: "0.1"
+prompt:
+  role: "You are an expert annotator of heritage values in visitor reviews."
+  task: "Your task is to score how strongly each of the following heritage values is expressed, based on the provided coding rules."
+  rules_heading: "### Heritage Value Coding Rules:"
+  reasoning_example: "The review strongly praises the view..."
+output:
+  type: ordinal
+  scale: {min: 1, max: 10}
+  scale_description: "1 = barely expressed or negative, 10 = strongly and positively expressed."
+render:
+  - {field: definition, label: Definition}
+categories:
+  Aesthetic: {definition: The reviewer appreciates visual, sensory or artistic qualities of the place.}
+  Historic: {definition: The reviewer connects the place to past events, people or periods.}
+  Social: {definition: "The reviewer describes the place as a setting for community life, gatherings, family or shared identity."}
+  Economic: {definition: "The reviewer judges prices, value for money, costs or commercial use of the place."}

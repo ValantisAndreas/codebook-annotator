@@ -1,0 +1,65 @@
+site_name: codebook-annotator
+site_description: Annotate text with large language models from a YAML codebook, with full provenance and evaluation against human annotators.
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: ["."]
+      check_paths: true
+
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Concepts: concepts.md
+  - Guides:
+      - Writing a codebook: guides/codebooks.md
+      - Comparing codebooks: guides/comparing-codebooks.md
+      - Running annotations: guides/running.md
+      - Providers: guides/providers.md
+      - Optional features: guides/optional-features.md
+      - Evaluating runs: guides/evaluation.md
+      - Preparing data: guides/preparing-data.md
+      - Reproducibility and sharing: guides/reproducibility.md
+      - Troubleshooting: guides/troubleshooting.md
+  - Examples:
+      - Overview: examples/index.md
+      - Comparing codebooks: examples/ablation.md
+      - Ordinal scores: examples/ordinal.md
+  - Reference:
+      - Configuration: reference/configuration.md
+      - Command line: reference/cli.md
+      - Codebook format: reference/codebook-format.md
+      - Run records: reference/run-records.md
+      - Prompt templates: reference/templates.md
+  - Project:
+      - Changelog: project/changelog.md
+      - Contributing: project/contributing.md
+      - Security: project/security.md

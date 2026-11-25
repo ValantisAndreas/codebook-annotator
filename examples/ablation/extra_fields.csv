@@ -1,0 +1,4 @@
+category,context,boundary_note
+Quality,"Often comes with a time span, for example after two weeks or after a year of daily use.","A price complaint about a broken machine is Price only if the cost itself is judged."
+Price,"Often compares with other brands or mentions a sale or a discount.","Mentioning a discount without judging it is not Price."
+Service,"Often names a shop, a courier or a support channel such as chat or phone.","Problems with the machine itself are Quality, not Service, unless a repair or return is described."

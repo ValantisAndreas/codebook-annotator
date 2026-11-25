@@ -1,0 +1,282 @@
+{
+  "categories": [
+    "Aesthetic",
+    "Historic",
+    "Social"
+  ],
+  "cases": {
+    "canonical": {
+      "raw": "{\"predictions\": {\"Aesthetic\": true, \"Historic\": false, \"Social\": true}, \"reasoning\": \"Mentions beauty and community.\"}",
+      "predictions": {
+        "Aesthetic": true,
+        "Historic": false,
+        "Social": true
+      },
+      "parse_status": "ok",
+      "parse_notes": null,
+      "reasoning": "Mentions beauty and community.",
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "canonical_pretty": {
+      "raw": "{\n  \"predictions\": {\n    \"Aesthetic\": true,\n    \"Historic\": false,\n    \"Social\": true\n  },\n  \"reasoning\": \"Mentions beauty and community.\"\n}",
+      "predictions": {
+        "Aesthetic": true,
+        "Historic": false,
+        "Social": true
+      },
+      "parse_status": "ok",
+      "parse_notes": null,
+      "reasoning": "Mentions beauty and community.",
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "fenced_json": {
+      "raw": "```json\n{\"predictions\": {\"Aesthetic\": true, \"Historic\": false, \"Social\": true}, \"reasoning\": \"Mentions beauty and community.\"}\n```",
+      "predictions": {
+        "Aesthetic": true,
+        "Historic": false,
+        "Social": true
+      },
+      "parse_status": "ok",
+      "parse_notes": null,
+      "reasoning": "Mentions beauty and community.",
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "fenced_plain": {
+      "raw": "```\n{\"predictions\": {\"Aesthetic\": true, \"Historic\": false, \"Social\": true}, \"reasoning\": \"Mentions beauty and community.\"}\n```",
+      "predictions": {
+        "Aesthetic": false,
+        "Historic": false,
+        "Social": false
+      },
+      "parse_status": "failed",
+      "parse_notes": "JSON parse error: Expecting value: line 1 column 1 (char 0). Raw response: ```\n{\"predictions\": {\"Aesthetic\": true, \"Historic\": false, \"Social\": true}, \"reasoning\": \"Mentions beauty and community.\"}\n```",
+      "reasoning": null,
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "fallback_predicting": {
+      "raw": "{\"predicting\": {\"Aesthetic\": true, \"Historic\": false, \"Social\": true}, \"reasoning\": \"r\"}",
+      "predictions": {
+        "Aesthetic": true,
+        "Historic": false,
+        "Social": true
+      },
+      "parse_status": "ok",
+      "parse_notes": "FORMAT WARNING: Fallback key used: 'predicting' (expected 'predictions')",
+      "reasoning": "r",
+      "used_fallback": true,
+      "fallback_key": "predicting"
+    },
+    "fallback_results": {
+      "raw": "{\"results\": {\"Aesthetic\": true, \"Historic\": false, \"Social\": true}}",
+      "predictions": {
+        "Aesthetic": true,
+        "Historic": false,
+        "Social": true
+      },
+      "parse_status": "ok",
+      "parse_notes": "FORMAT WARNING: Fallback key used: 'results' (expected 'predictions')",
+      "reasoning": "",
+      "used_fallback": true,
+      "fallback_key": "results"
+    },
+    "fallback_prefers_first_alt_key": {
+      "raw": "{\"results\": {\"Aesthetic\": true}, \"predicting\": {\"Historic\": true}}",
+      "predictions": {
+        "Aesthetic": false,
+        "Historic": true,
+        "Social": false
+      },
+      "parse_status": "partial",
+      "parse_notes": "Missing category predictions in JSON: Aesthetic, Social; FORMAT WARNING: Fallback key used: 'predicting' (expected 'predictions')",
+      "reasoning": "",
+      "used_fallback": true,
+      "fallback_key": "predicting"
+    },
+    "root_object": {
+      "raw": "{\"Aesthetic\": true, \"Historic\": true, \"Social\": false, \"reasoning\": \"flat\"}",
+      "predictions": {
+        "Aesthetic": true,
+        "Historic": true,
+        "Social": false
+      },
+      "parse_status": "ok",
+      "parse_notes": "FORMAT WARNING: Fallback key used: 'root_object' (expected 'predictions')",
+      "reasoning": "flat",
+      "used_fallback": true,
+      "fallback_key": "root_object"
+    },
+    "missing_category_partial": {
+      "raw": "{\"predictions\": {\"Aesthetic\": true}, \"reasoning\": \"only one\"}",
+      "predictions": {
+        "Aesthetic": true,
+        "Historic": false,
+        "Social": false
+      },
+      "parse_status": "partial",
+      "parse_notes": "Missing category predictions in JSON: Historic, Social",
+      "reasoning": "only one",
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "no_reasoning": {
+      "raw": "{\"predictions\": {\"Aesthetic\": true, \"Historic\": false, \"Social\": true}}",
+      "predictions": {
+        "Aesthetic": true,
+        "Historic": false,
+        "Social": true
+      },
+      "parse_status": "ok",
+      "parse_notes": null,
+      "reasoning": "",
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "extra_category_ignored": {
+      "raw": "{\"predictions\": {\"Aesthetic\": true, \"Historic\": false, \"Social\": true, \"Political\": true}, \"reasoning\": \"x\"}",
+      "predictions": {
+        "Aesthetic": true,
+        "Historic": false,
+        "Social": true
+      },
+      "parse_status": "ok",
+      "parse_notes": null,
+      "reasoning": "x",
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "predictions_not_object": {
+      "raw": "{\"predictions\": [\"Aesthetic\"], \"reasoning\": \"list\"}",
+      "predictions": {
+        "Aesthetic": false,
+        "Historic": false,
+        "Social": false
+      },
+      "parse_status": "failed",
+      "parse_notes": "'predictions' key exists but is not an object. Type: <class 'list'>",
+      "reasoning": "list",
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "missing_predictions_key": {
+      "raw": "{\"labels\": [\"Aesthetic\"], \"reasoning\": \"nope\"}",
+      "predictions": {
+        "Aesthetic": false,
+        "Historic": false,
+        "Social": false
+      },
+      "parse_status": "failed",
+      "parse_notes": "Missing 'predictions' key in JSON object",
+      "reasoning": "nope",
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "json_array": {
+      "raw": "[1, 2, 3]",
+      "predictions": {
+        "Aesthetic": false,
+        "Historic": false,
+        "Social": false
+      },
+      "parse_status": "failed",
+      "parse_notes": "Response is JSON but not an object. Type: <class 'list'>",
+      "reasoning": null,
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "not_json": {
+      "raw": "I think the text is about beauty.",
+      "predictions": {
+        "Aesthetic": false,
+        "Historic": false,
+        "Social": false
+      },
+      "parse_status": "failed",
+      "parse_notes": "JSON parse error: Expecting value: line 1 column 1 (char 0). Raw response: I think the text is about beauty.",
+      "reasoning": null,
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "empty": {
+      "raw": "",
+      "predictions": {
+        "Aesthetic": false,
+        "Historic": false,
+        "Social": false
+      },
+      "parse_status": "failed",
+      "parse_notes": "Empty response from model",
+      "reasoning": null,
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "whitespace_only": {
+      "raw": "   \n ",
+      "predictions": {
+        "Aesthetic": false,
+        "Historic": false,
+        "Social": false
+      },
+      "parse_status": "failed",
+      "parse_notes": "JSON parse error: Expecting value: line 1 column 1 (char 0). Raw response:    \n ",
+      "reasoning": null,
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "int_values": {
+      "raw": "{\"predictions\": {\"Aesthetic\": 1, \"Historic\": 0, \"Social\": 0}, \"reasoning\": \"ints\"}",
+      "predictions": {
+        "Aesthetic": true,
+        "Historic": false,
+        "Social": false
+      },
+      "parse_status": "ok",
+      "parse_notes": null,
+      "reasoning": "ints",
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "null_value": {
+      "raw": "{\"predictions\": {\"Aesthetic\": null, \"Historic\": true, \"Social\": false}, \"reasoning\": \"n\"}",
+      "predictions": {
+        "Aesthetic": false,
+        "Historic": true,
+        "Social": false
+      },
+      "parse_status": "ok",
+      "parse_notes": null,
+      "reasoning": "n",
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "trailing_text": {
+      "raw": "{\"predictions\": {\"Aesthetic\": true, \"Historic\": false, \"Social\": true}, \"reasoning\": \"Mentions beauty and community.\"}\nHope this helps!",
+      "predictions": {
+        "Aesthetic": false,
+        "Historic": false,
+        "Social": false
+      },
+      "parse_status": "failed",
+      "parse_notes": "JSON parse error: Extra data: line 2 column 1 - line 2 column 17 (char 119 - 135). Raw response: {\"predictions\": {\"Aesthetic\": true, \"Historic\": false, \"Social\": true}, \"reasoning\": \"Mentions beauty and community.\"}\nHope this helps!",
+      "reasoning": null,
+      "used_fallback": false,
+      "fallback_key": null
+    },
+    "nan_literal": {
+      "raw": "{\"predictions\": {\"Aesthetic\": true, \"Historic\": false, \"Social\": false}, \"reasoning\": NaN}",
+      "predictions": {
+        "Aesthetic": false,
+        "Historic": false,
+        "Social": false
+      },
+      "parse_status": "failed",
+      "parse_notes": "JSON parse error: Expecting value: line 1 column 87 (char 86). Raw response: {\"predictions\": {\"Aesthetic\": true, \"Historic\": false, \"Social\": false}, \"reasoning\": NaN}",
+      "reasoning": null,
+      "used_fallback": false,
+      "fallback_key": null
+    }
+  }
+}

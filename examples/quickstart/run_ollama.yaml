@@ -1,0 +1,10 @@
+# Quickstart run: local Ollama model. Change model_tag to any model from `ollama list`.
+run_id: demo_llama31
+codebook: heritage_values.yaml
+dataset: reviews.jsonl
+provider: ollama
+model_tag: llama3.1:8b
+model_digest: auto
+temperature: 0.0
+seed: 42
+output_dir: runs

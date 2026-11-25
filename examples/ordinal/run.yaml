@@ -1,0 +1,9 @@
+# Run settings for the ordinal example.
+run_id: frames_scores
+codebook: frames.yaml
+dataset: headlines.jsonl
+provider: ollama
+model_tag: llama3.1:8b      # any model listed by `ollama list`
+model_digest: auto          # record the exact model version
+temperature: 0.0
+output_dir: runs

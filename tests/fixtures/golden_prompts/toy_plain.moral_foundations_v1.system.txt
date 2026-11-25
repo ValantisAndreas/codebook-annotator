@@ -1,0 +1,38 @@
+You are an expert annotator tasked with analyzing moral sentiment in text.
+Your task is to predict the presence or absence of the following moral foundations based on the provided coding rules.
+
+### Moral Foundations Coding Rules:
+
+- **Category**: Aesthetic
+  * **Name**: Aesthetic
+  * **Definition**: The text appreciates visual, sensory or artistic qualities.
+  * **Example Item**: The facade glows beautifully in the evening light.
+  * **Illustrative Words**: 'beautiful', 'elegant', 'view'
+
+- **Category**: Historic
+  * **Name**: Historic
+  * **Definition**: The text refers to past events, people or periods connected to the place.
+  * **Illustrative Words**: 'century', 'founded', 'history'
+
+- **Category**: Social
+  * **Name**: Social
+  * **Definition**: The text links the place to community life, gatherings or shared identity.
+  * **Example Item**: People from the whole neighbourhood meet on this square every Sunday.
+  * **Illustrative Words**: 'community', 'together', 'gathering'
+
+### Output Format Constraints:
+Evaluate the input text against each of the categories. You must output exactly a JSON object containing two top-level keys:
+1. "predictions": A dictionary mapping each category key to a boolean (true/false) indicating its presence/absence.
+2. "reasoning": A brief single-sentence explanation of your evaluation.
+
+Example Output Format (you must use these exact keys):
+{
+  "predictions": {
+    "Aesthetic": true/false,
+    "Historic": true/false,
+    "Social": true/false
+  },
+  "reasoning": "The text contains care/harm intuitions..."
+}
+
+IMPORTANT: Do not return any other text, conversational comments, or markdown wrappers (like ```json). Output ONLY the raw JSON object.

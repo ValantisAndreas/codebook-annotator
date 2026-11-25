@@ -1,0 +1,28 @@
+# Synthetic test codebook with a render block, an extra field, an empty field,
+# and a dict-valued word list.
+provenance:
+  source: synthetic test fixture
+render:
+- field: name
+  label: Name
+- field: definition
+  label: Definition
+- field: example_words
+  label: Illustrative Words
+- field: context_of_use
+  label: Context of Use
+- field: boundary_note
+  label: Boundary Note
+categories:
+  Historic:
+    name: Historic
+    definition: The text refers to past events, people or periods connected to the place.
+    example_words: {words: ["century", "founded"]}
+    context_of_use: Guide-book style descriptions and visitor reviews mentioning dates.
+    boundary_note: ""
+  Aesthetic:
+    name: Aesthetic
+    definition: The text appreciates visual, sensory or artistic qualities.
+    example_words: ["beautiful", "view"]
+    context_of_use: Reviews praising appearance, photographs, scenery.
+    boundary_note: Not Historic unless a past event or period is named.

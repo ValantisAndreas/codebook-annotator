@@ -1,0 +1,25 @@
+# Ordinal codebook: each category gets a score from 1 to 10, or null when it is absent.
+id: news_frames_scores
+version: "0.1"
+prompt:
+  role: "You are an expert annotator of news headlines."
+  task: "Your task is to score how strongly each of the following news frames is present in the headline, based on the provided coding rules."
+  rules_heading: "### News Frame Coding Rules:"
+  reasoning_example: "The headline stresses a clash between two parties and its cost..."
+output:
+  type: ordinal
+  scale: {min: 1, max: 10}
+  scale_description: "1 = faintly present, 10 = the main point of the headline. Use null when the frame is absent."
+render:
+  - {field: definition, label: Definition}
+  - {field: signals, label: Typical signals}
+categories:
+  Conflict:
+    definition: The headline presents a disagreement, a fight or a confrontation between people, groups or countries.
+    signals: [clash, row, slams, versus, dispute]
+  Economy:
+    definition: The headline is about money, prices, jobs, business or the economy.
+    signals: [prices, jobs, profit, budget, market]
+  Human interest:
+    definition: The headline puts a personal story, emotions or an individual's experience in front.
+    signals: [mother, hero, heartbreaking, survivor, family]

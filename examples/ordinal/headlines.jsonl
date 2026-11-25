@@ -1,0 +1,8 @@
+{"item_id": "h01", "text": "Ministers clash over budget cuts as unions threaten strike", "gold_scores": {"Conflict": 9, "Economy": 7, "Human interest": null}, "label_majority": ["Conflict", "Economy"]}
+{"item_id": "h02", "text": "Bread prices rise for the third month in a row", "gold_scores": {"Conflict": null, "Economy": 9, "Human interest": null}, "label_majority": ["Economy"]}
+{"item_id": "h03", "text": "Mother of three finishes marathon one year after surviving cancer", "gold_scores": {"Conflict": null, "Economy": null, "Human interest": 10}, "label_majority": ["Human interest"]}
+{"item_id": "h04", "text": "Neighbours in bitter row over a fallen tree", "gold_scores": {"Conflict": 7, "Economy": null, "Human interest": 4}, "label_majority": ["Conflict", "Human interest"]}
+{"item_id": "h05", "text": "Factory closure leaves 400 families without income", "gold_scores": {"Conflict": null, "Economy": 8, "Human interest": 7}, "label_majority": ["Economy", "Human interest"]}
+{"item_id": "h06", "text": "City council approves new bus timetable", "gold_scores": {"Conflict": null, "Economy": null, "Human interest": null}, "label_majority": []}
+{"item_id": "h07", "text": "Tech giant slams regulator as fine hits record profit", "gold_scores": {"Conflict": 8, "Economy": 8, "Human interest": null}, "label_majority": ["Conflict", "Economy"]}
+{"item_id": "h08", "text": "Teenager saves dog from frozen lake", "gold_scores": {"Conflict": null, "Economy": null, "Human interest": 9}, "label_majority": ["Human interest"]}

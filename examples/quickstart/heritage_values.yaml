@@ -1,0 +1,35 @@
+# Example codebook (synthetic, for the quickstart). Four heritage-value categories,
+# described in our own words for illustration only.
+id: heritage_values_demo
+version: "0.1"
+prompt:
+  role: "You are an expert annotator of heritage values in visitor reviews."
+  task: "Your task is to predict the presence or absence of each of the following heritage values based on the provided coding rules."
+  rules_heading: "### Heritage Value Coding Rules:"
+  reasoning_example: "The review praises the view and mentions the founding date..."
+render:
+  - {field: definition, label: Definition}
+  - {field: indicators, label: Typical indicators}
+  - {field: boundary_note, label: Boundary note}
+categories:
+  Aesthetic:
+    definition: The reviewer appreciates visual, sensory or artistic qualities of the place.
+    indicators: [beautiful, view, architecture, colours, scenery]
+    boundary_note: Mentioning that photos were taken is not enough on its own.
+  Historic:
+    definition: The reviewer connects the place to past events, people or periods.
+    indicators: [century, built in, history, dynasty, founded]
+    boundary_note: The age of the building alone without any narrative is still Historic.
+  Social:
+    definition: The reviewer describes the place as a setting for community life, gatherings, family or shared identity.
+    indicators: [locals, families, festival, meeting place, community]
+    boundary_note: Crowds that bother the reviewer are not Social value.
+  Economic:
+    definition: The reviewer judges prices, value for money, costs or commercial use of the place.
+    indicators: [ticket, price, expensive, worth the money, shops]
+    boundary_note: ""
+examples:
+  - text: "Paid 20 euros for the ticket, which felt steep, but the frescoes are stunning."
+    labels: [Economic, Aesthetic]
+    reasoning: "Comments on the ticket price and praises the frescoes."
+    evidence: {Economic: ["Paid 20 euros for the ticket"], Aesthetic: ["the frescoes are stunning"]}

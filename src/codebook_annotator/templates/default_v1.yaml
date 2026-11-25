@@ -1,0 +1,7 @@
+# Default, domain-neutral template. Override any of these strings per codebook
+# with a `prompt:` block (keys: role, task, rules_heading, reasoning_example).
+name: default_v1
+role: "You are an expert annotator tasked with analyzing text according to a codebook."
+task: "Your task is to predict the presence or absence of each of the following categories based on the provided coding rules."
+rules_heading: "### Coding Rules:"
+reasoning_example: "The text expresses ..."

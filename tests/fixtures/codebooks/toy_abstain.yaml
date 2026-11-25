@@ -1,0 +1,13 @@
+# Synthetic test codebook with an abstention instruction.
+abstention_instruction: "If you are unsure whether a category applies, mark it as false."
+categories:
+  Aesthetic:
+    name: Aesthetic
+    definition: The text appreciates visual, sensory or artistic qualities.
+    example_item: The facade glows beautifully in the evening light.
+    example_words: ["beautiful"]
+  Historic:
+    name: Historic
+    definition: The text refers to past events, people or periods connected to the place.
+    example_item: The fort was built in the seventeenth century.
+    example_words: ["history"]

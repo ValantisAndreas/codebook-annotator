@@ -1,0 +1,1 @@
+--8<-- "examples/ordinal/README.md"

@@ -1,0 +1,7 @@
+# Frozen template with wording for moral-foundations annotation.
+# Do not edit: runs recorded with prompt_template=moral_foundations_v1 depend on it.
+name: moral_foundations_v1
+role: "You are an expert annotator tasked with analyzing moral sentiment in text."
+task: "Your task is to predict the presence or absence of the following moral foundations based on the provided coding rules."
+rules_heading: "### Moral Foundations Coding Rules:"
+reasoning_example: "The text contains care/harm intuitions..."
