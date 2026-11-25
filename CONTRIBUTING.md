@@ -17,8 +17,9 @@ Run the checks before every pull request:
 The tests need no network, no API keys and no local model. Providers are tested against mocked
 HTTP servers.
 
-Continuous integration runs the same checks on Linux and macOS with Python 3.11, 3.12 and 3.13,
-and builds the documentation in strict mode. A pull request needs all of them to pass.
+Continuous integration runs the same checks on Linux with Python 3.12 for every push to `main`
+and every pull request, and builds the documentation in strict mode. A pull request needs both to
+pass.
 
 ## Documentation
 
@@ -34,6 +35,12 @@ run setting, its description, or any command-line option, regenerate them and co
     python scripts/gen_reference.py
 
 A test fails when the committed reference pages are out of date.
+
+The GitHub Wiki is generated from `docs/`. Never edit the Wiki directly. After a push to `main`
+that changes the documentation, a workflow rebuilds the Wiki pages with `scripts/build_wiki.py`
+and publishes them. To preview the Wiki pages locally:
+
+    python scripts/build_wiki.py docs wiki-build
 
 ## Rules that protect reproducibility
 

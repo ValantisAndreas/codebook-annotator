@@ -10,3 +10,4 @@ runs/
 .DS_Store
 site/
 .env
+wiki-build/
